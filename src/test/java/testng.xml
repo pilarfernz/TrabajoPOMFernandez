@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite pruebas de regresión" verbose="1" >
+    <test name="Casos de prueba" >
+        <classes>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP001_login_fallido" />
+                </methods>
+            </class>
+
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP02_registro_fallido" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP03_registro_con_mail_existente" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP04_login_exitoso" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP05_ir_pantalla_cobertura_social" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP06_busqueda_sin_destino" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP07_busqueda_sin_fecha" />
+                </methods>
+            </class>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="CP08_cerrar_sesion" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
